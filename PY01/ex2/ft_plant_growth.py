@@ -1,10 +1,16 @@
 class Plant:
+    name = "Rose"
+    _age = 30
+
     def show(self):
         print(f"{self.name}: {self.height:.1f}cm, {self._age} days old")
+
     def grow(self):
         self.height = round(self.height + 0.6, 1)
+
     def age(self):
         self._age += 1
+
 
 if __name__ == "__main__":
     rose = Plant()

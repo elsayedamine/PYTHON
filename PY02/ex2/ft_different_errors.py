@@ -43,12 +43,12 @@ def test_error_types() -> None:
     except Exception as e:
         print(f"Caught unexpected error: {e}")
 
-
     print("Testing multiple error types with one try...")
     for operation in range(4):
         try:
             garden_operations(operation)
-        except (ValueError, ZeroDivisionError, FileNotFoundError, TypeError) as e:
+        except (ValueError, ZeroDivisionError, FileNotFoundError,
+                TypeError) as e:
             print(f"Caught error: {e}")
     print("All error types tested successfully!")
 

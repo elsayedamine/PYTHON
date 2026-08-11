@@ -1,6 +1,6 @@
 def recursion(start, stop):
     if (start > stop):
-        return 
+        return
     print("Day ", start)
     recursion(start + 1, stop)
 

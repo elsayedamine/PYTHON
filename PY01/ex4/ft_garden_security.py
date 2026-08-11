@@ -3,26 +3,33 @@ class Plant:
         self.name = name
         self._height = height
         self._age = age
+
     def show(self):
         print(f"{self.name}: {self._height:.1f}cm, {self._age} days old")
+
     def grow(self):
         self._height = round(self._height + 0.6, 1)
+
     def age(self):
         self._age += 1
+
     def set_height(self, height):
         if height < 0:
             print(f"{self.name}: Error, height can't be negative")
             return False
         self._height = height
         return True
+
     def set_age(self, age):
         if age < 0:
             print(f"{self.name}: Error, age can't be negative")
             return False
         self._age = age
         return True
+
     def get_height(self):
         return self._height
+
     def get_age(self):
         return self._age
 

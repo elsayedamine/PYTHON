@@ -3,12 +3,16 @@ class Plant:
         self.name = name
         self.height = height
         self._age = age
+
     def show(self):
         print(f"{self.name}: {self.height:.1f}cm, {self._age} days old")
+
     def grow(self):
         self.height = round(self.height + 0.6, 1)
+
     def age(self):
         self._age += 1
+
 
 if __name__ == "__main__":
     rose = Plant("Rose", 25.0, 30)
@@ -16,7 +20,6 @@ if __name__ == "__main__":
     Violet = Plant("Violet", 27.0, 30)
     Blue = Plant("Blue", 28.0, 30)
     magenta = Plant("magenta", 29.0, 30)
-
 
     print("=== Garden Plant Growth ===")
     rose.show()

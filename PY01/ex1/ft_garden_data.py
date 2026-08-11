@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
-
 class Plant:
+    name = "Rose"
+    height = 25
+    age = 30
+
     def show(self):
         print(f"{self.name}: {self.height}cm, {self.age} days old")
 

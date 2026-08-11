@@ -2,9 +2,11 @@ class GardenError(Exception):
     def __init__(self, message: str = "Unknown garden error") -> None:
         super().__init__(message)
 
+
 class PlantError(GardenError):
     def __init__(self, message: str = "Unknown plant error") -> None:
         super().__init__(message)
+
 
 class WaterError(GardenError):
     def __init__(self, message: str = "Unknown water error") -> None:
@@ -45,7 +47,6 @@ def test_watering_system() -> None:
         print("'else' block evaluated")
     finally:
         print("'finally' block evaluated")
-
 
     print("Testing invalid plants...")
     print("Opening watering system")
