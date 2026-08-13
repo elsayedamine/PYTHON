@@ -213,7 +213,7 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 
-# Polymorphism: 
+# Polymorphism:
 # That's the real benefit: Open for extension, closed for modification.
 # It is the ability for one interface/reference to represent diff obj types,
 # Polymorph = one common interface, multiple possible implements/behaviors.

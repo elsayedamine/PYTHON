@@ -262,7 +262,7 @@ if __name__ == "__main__":
 # Duck Typing:
 # If it walks like a duck and quacks like a duck, treat it as a duck.
 
-#ABC
+# ABC
 # │
 # └── "You belong to this class hierarchy."
 #     → inheritance-based polymorphism
@@ -277,4 +277,7 @@ if __name__ == "__main__":
 # Any class that provides those required 5 members with compatible types/
 # signatures satisfies the protocol, even without inheriting from it.
 # It may also have additional methods/attributes; those don't matter.
-# So: Protocol = "has at least this required structure", rather than "inherits from this class."
+# So: Protocol = "has at least this required structure", rather than
+# "inherits from this class."
+
+# Think: ABC = “is a”, Protocol = “can act as a”.
